@@ -1,0 +1,252 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DIODE D2
+U 1 1 54099C68
+P 3350 2850
+F 0 "D2" H 3350 2950 40  0000 C CNN
+F 1 "1N4007" H 3350 2750 40  0000 C CNN
+F 2 "" H 3350 2850 60  0000 C CNN
+F 3 "" H 3350 2850 60  0000 C CNN
+	1    3350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 54099C7C
+P 3150 3350
+F 0 "D1" H 3150 3450 40  0000 C CNN
+F 1 "1N4007" H 3150 3250 40  0000 C CNN
+F 2 "" H 3150 3350 60  0000 C CNN
+F 3 "" H 3150 3350 60  0000 C CNN
+	1    3150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D3
+U 1 1 54099C90
+P 4050 3250
+F 0 "D3" H 4050 3350 40  0000 C CNN
+F 1 "1N4007" H 4050 3150 40  0000 C CNN
+F 2 "" H 4050 3250 60  0000 C CNN
+F 3 "" H 4050 3250 60  0000 C CNN
+	1    4050 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L THYRISTOR T1
+U 1 1 54099CA4
+P 3650 3250
+F 0 "T1" H 3550 3350 40  0000 C CNN
+F 1 "BT151-800r" H 3650 3150 40  0000 C CNN
+F 2 "" H 3650 3250 60  0000 C CNN
+F 3 "" H 3650 3250 60  0000 C CNN
+	1    3650 3250
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 54099CB8
+P 1950 3600
+F 0 "R1" V 2030 3600 40  0000 C CNN
+F 1 "47om" V 1957 3601 40  0000 C CNN
+F 2 "" V 1880 3600 30  0000 C CNN
+F 3 "" H 1950 3600 30  0000 C CNN
+	1    1950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 54099CCC
+P 2550 3100
+F 0 "R2" V 2630 3100 40  0000 C CNN
+F 1 "4,7k" V 2557 3101 40  0000 C CNN
+F 2 "" V 2480 3100 30  0000 C CNN
+F 3 "" H 2550 3100 30  0000 C CNN
+	1    2550 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 54099CE0
+P 4400 2850
+F 0 "C2" H 4400 2950 40  0000 L CNN
+F 1 "1uF 450V" H 4406 2765 40  0000 L CNN
+F 2 "" H 4438 2700 30  0000 C CNN
+F 3 "" H 4400 2850 60  0000 C CNN
+	1    4400 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 54099CF4
+P 2550 3550
+F 0 "C1" H 2600 3650 50  0000 L CNN
+F 1 "100uF 25V tantal" V 2350 3200 50  0000 L CNN
+F 2 "" H 2550 3550 60  0000 C CNN
+F 3 "" H 2550 3550 60  0000 C CNN
+	1    2550 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_6 P1
+U 1 1 54099D08
+P 1250 2500
+F 0 "P1" V 1200 2500 60  0000 C CNN
+F 1 "CONN_6" V 1300 2500 60  0000 C CNN
+F 2 "" H 1250 2500 60  0000 C CNN
+F 3 "" H 1250 2500 60  0000 C CNN
+	1    1250 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 2850 4200 2850
+Wire Wire Line
+	3650 2850 3650 3050
+Wire Wire Line
+	4050 3050 4050 2850
+Connection ~ 4050 2850
+Wire Wire Line
+	4600 2850 4950 2850
+Text Label 4950 2850 0    60   ~ 0
+CEWKA
+Wire Wire Line
+	3500 3350 3350 3350
+Wire Wire Line
+	2800 3100 2850 3100
+Wire Wire Line
+	2850 3100 2850 3550
+Wire Wire Line
+	2850 3550 2750 3550
+Wire Wire Line
+	2950 3350 2850 3350
+Connection ~ 2850 3350
+Wire Wire Line
+	2300 3100 2200 3100
+Wire Wire Line
+	2200 3100 2200 3550
+Wire Wire Line
+	2200 3550 2350 3550
+$Comp
+L GND #PWR01
+U 1 1 54099F61
+P 1950 3950
+F 0 "#PWR01" H 1950 3950 30  0001 C CNN
+F 1 "GND" H 1950 3880 30  0001 C CNN
+F 2 "" H 1950 3950 60  0000 C CNN
+F 3 "" H 1950 3950 60  0000 C CNN
+	1    1950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 54099F75
+P 3850 3700
+F 0 "#PWR02" H 3850 3700 30  0001 C CNN
+F 1 "GND" H 3850 3630 30  0001 C CNN
+F 2 "" H 3850 3700 60  0000 C CNN
+F 3 "" H 3850 3700 60  0000 C CNN
+	1    3850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3450 4050 3550
+Wire Wire Line
+	4050 3550 3650 3550
+Wire Wire Line
+	3650 3550 3650 3450
+Wire Wire Line
+	3850 3550 3850 3700
+Connection ~ 3850 3550
+Wire Wire Line
+	1950 3850 1950 3950
+Wire Wire Line
+	1500 3350 2200 3350
+Connection ~ 2200 3350
+Connection ~ 1950 3350
+Connection ~ 3650 2850
+Wire Wire Line
+	3150 2850 2900 2850
+Text Label 2900 2850 0    60   ~ 0
+ZAS
+Text Label 1500 3350 0    60   ~ 0
+STER
+Text Label 1600 2750 0    60   ~ 0
+CEWKA
+Text Label 1600 2650 0    60   ~ 0
+ZAS
+$Comp
+L GND #PWR03
+U 1 1 5409A1DC
+P 2000 2550
+F 0 "#PWR03" H 2000 2550 30  0001 C CNN
+F 1 "GND" H 2000 2480 30  0001 C CNN
+F 2 "" H 2000 2550 60  0000 C CNN
+F 3 "" H 2000 2550 60  0000 C CNN
+	1    2000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2450 2000 2450
+Wire Wire Line
+	2000 2450 2000 2550
+Wire Wire Line
+	1600 2550 1800 2550
+Wire Wire Line
+	1800 2550 1800 2450
+Connection ~ 1800 2450
+Wire Wire Line
+	1600 2350 1700 2350
+Wire Wire Line
+	1700 2350 1700 2250
+Wire Wire Line
+	1700 2250 1600 2250
+Wire Wire Line
+	1700 2300 1850 2300
+Connection ~ 1700 2300
+Text Label 1850 2300 0    60   ~ 0
+STER
+$EndSCHEMATC

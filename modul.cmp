@@ -1,0 +1,66 @@
+Cmp-Mod V01 Created by CvPcb (2014-03-19 BZR 4756)-product date = pią, 5 wrz 2014, 14:09:53
+
+BeginCmp
+TimeStamp = /54099CF4;
+Reference = C1;
+ValeurCmp = 100uF 25V tantal;
+IdModule  = Capacitors_ThroughHole:Capacitor5x6RM2.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /54099CE0;
+Reference = C2;
+ValeurCmp = 1uF 450V;
+IdModule  = Choke_Axial_ThroughHole:Choke_Horizontal_RM20mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54099C7C;
+Reference = D1;
+ValeurCmp = 1N4007;
+IdModule  = Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54099C68;
+Reference = D2;
+ValeurCmp = 1N4007;
+IdModule  = Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54099C90;
+Reference = D3;
+ValeurCmp = 1N4007;
+IdModule  = Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54099D08;
+Reference = P1;
+ValeurCmp = CONN_6;
+IdModule  = Sockets_MOLEX_KK-System:Socket_MOLEX-KK-RM2-54mm_Lock_6pin_straight;
+EndCmp
+
+BeginCmp
+TimeStamp = /54099CB8;
+Reference = R1;
+ValeurCmp = 47om;
+IdModule  = Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54099CCC;
+Reference = R2;
+ValeurCmp = 4,7k;
+IdModule  = Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54099CA4;
+Reference = T1;
+ValeurCmp = BT151-800r;
+IdModule  = Tyrystor:TO220;
+EndCmp
+
+EndListe
